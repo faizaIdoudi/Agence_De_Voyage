@@ -1,0 +1,96 @@
+.home-page {
+    font-family: Arial, sans-serif;
+  }
+  
+  .hero {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: #007bff;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .explore-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .advertisement {
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+/* Container for the travel cards */
+.travel-cards {
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    gap: 10px; /* Space between the cards */
+    padding: 10px;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .cards-container {
+      grid-template-columns: repeat(3, 1fr); /* Keep 3 cards per row on medium screens (tablets) */
+      gap: 10px; /* Decreased gap between the cards */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .cards-container {
+      grid-template-columns: 1fr; /* 1 column for smaller screens (phones) */
+    }
+  }
+  
+  .card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0; /* Ensures no additional margin outside of the card */
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensures the image fills the space */
+    border-radius: 8px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  .card-description {
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .card-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
